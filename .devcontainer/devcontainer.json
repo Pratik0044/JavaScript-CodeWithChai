@@ -23,9 +23,10 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
-				"editor.fontSize": 32,
+				"editor.fontSize": 24,
 				"terminal.integrated.fontSize": 24,
-				"editor.wordWrap": "on"
+				"editor.wordWrap": "on",
+				"editor.fontFamily": "JetBrains Mono"
 			}
 			
 		}
