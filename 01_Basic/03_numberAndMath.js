@@ -16,19 +16,20 @@
 //++ math
 
 console.log(Math)
-console.log(Math.abs(-128))
-console.log(Math.round(-128.6))
-console.log(Math.ceil(-128.2))
-console.log(Math.floor(-128.9))
+console.log(Math.abs(-128)) // for mode
+console.log(Math.round(-128.6)) // for round off
+console.log(Math.ceil(-128.2))// find topest value
+console.log(Math.floor(-128.9)) // find lowest value
 
-console.log(Math.random())
-console.log(Math.random()*10)
-console.log((Math.random()*10 )+1)
+console.log(Math.random()) // for a random number which is lies between 0 and 1
+console.log(Math.random()*10) // to find random number multiply with 10 
+console.log((Math.random()*10 )+1)//to find random number multiply with 10 and add 1
 
 console.log((Math.floor(Math.random()*10 )+1))
 
 const max=50;
 const min=10;
 
-console.log(Math.random() *(max-min+1) +min)
+console.log(Math.random() *(max-min+1) +min) // desired value between max and min given number
+
 
