@@ -25,10 +25,10 @@ let newArray=arr.join()
 // console.log(typeof(newArray));
 
 console.log("A", arr)
-let a1=arr.slice(1,3);
+let a1=arr.slice(1,3);// copy a pices of array
 console.log(a1);
 console.log("B", arr);
-let a2=arr.splice(1,3)
+let a2=arr.splice(1,3) // cut a pices of array
 console.log("c",arr);
 console.log(a2);
 
