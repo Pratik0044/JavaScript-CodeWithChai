@@ -65,9 +65,20 @@ const nUser=[
 nUser[1].email
 console.log(user);
 
-console.log(Object.keys(user));// output is array
-console.log(Object.values(user));//output is array
-console.log(Object.entries(user));//array of array
+// console.log(Object.keys(user));// output is array
+// console.log(Object.values(user));//output is array
+// console.log(Object.entries(user));//array of array
 
-console.log(user.hasOwnProperty("location")); //batata hai ki eske andar yah ahi ki nahi
+// console.log(user.hasOwnProperty("location")); //batata hai ki eske andar yah ahi ki nahi
 
+const course={
+    courseName:"js",
+    price:"1000",
+    courseInstructor:"Hitesh"
+}
+
+const{courseInstructor}=course
+console.log(courseInstructor);
+//or
+const{courseInstructor:cs}=course
+console.log(cs);
