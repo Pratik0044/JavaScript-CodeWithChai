@@ -63,7 +63,7 @@ const nUser=[
 ]
 
 nUser[1].email
-console.log(user);
+// console.log(user);
 
 // console.log(Object.keys(user));// output is array
 // console.log(Object.values(user));//output is array
@@ -77,8 +77,11 @@ const course={
     courseInstructor:"Hitesh"
 }
 
+//Distructure { } breacket se suru hota hai
 const{courseInstructor}=course
 console.log(courseInstructor);
 //or
 const{courseInstructor:cs}=course
 console.log(cs);
+
+
