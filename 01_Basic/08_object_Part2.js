@@ -4,7 +4,7 @@ user.id="0044";
 user.name="Pratik";
 user.location="Lucknow ";
 
-console.log(user);
+// console.log(user);
 
 const newUser={
     email:"new@gmail.com",
@@ -15,7 +15,7 @@ const newUser={
     mob:"23222332323"
 }
 
-console.log(newUser.fullname?.fistname);// "?" ---> this is optional try to use
+// console.log(newUser.fullname?.fistname);// "?" ---> this is optional try to use
 
 // to murge two object like array
 
@@ -32,12 +32,42 @@ const obj3={
     6:"f"
 }
 const obj={obj1,obj2,obj3};
-console.log(obj);
+// console.log(obj);
 
 const newobj=Object.assign({},obj1,obj2,obj3);
-console.log(newobj);
+// console.log(newobj);
 
 // or
 
 const newobj2={...obj1,...obj2,...obj3};
-console.log(newobj2);
+// console.log(newobj2);
+
+
+const nUser=[
+    {
+        id:1,
+        email:"abcd@gmail.com"
+    },
+    {
+        id:1,
+        email:"abcd@gmail.com"
+    },
+    {
+        id:1,
+        email:"abcd@gmail.com"
+    },  
+    {
+        id:1,
+        email:"abcd@gmail.com"
+    }
+]
+
+nUser[1].email
+console.log(user);
+
+console.log(Object.keys(user));// output is array
+console.log(Object.values(user));//output is array
+console.log(Object.entries(user));//array of array
+
+console.log(user.hasOwnProperty("location")); //batata hai ki eske andar yah ahi ki nahi
+
