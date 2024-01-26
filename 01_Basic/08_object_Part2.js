@@ -15,7 +15,7 @@ const newUser={
     mob:"23222332323"
 }
 
-console.log(newUser.fullname.fistname);
+console.log(newUser.fullname?.fistname);// "?" ---> this is optional try to use
 
 // to murge two object like array
 
