@@ -1,17 +1,17 @@
-// const score=500
+const score=500
 
-// const balance=new Number(400)// object of numer
-// console.log(score);
-// console.log(balance);
+const balance=new Number(400)// object of numer
+console.log(score);
+console.log(balance);
 
-// console.log(typeof(balance.toString()));
-// console.log(balance.toFixed(2));
+console.log(typeof(balance.toString()));
+console.log(balance.toFixed(2));
 
-// const newnumber=95.656878
-// console.log(newnumber.toPrecision(5));
+const newnumber=95.656878
+console.log(newnumber.toPrecision(5));
 
-// const zeroscount=1200100000
-// console.log(zeroscount.toLocaleString('en-IN'));
+const zeroscount=1200100000
+console.log(zeroscount.toLocaleString('en-IN'));
 
 //++ math
 
