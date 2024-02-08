@@ -12,10 +12,15 @@ jata hai. */
 (function chai(){
     console.log(`DB CONNECTED`);
 })();
+
 // ++++ ya +++
 
-(
-    ()=>{
-        console.log(`DB CONNECTED TWO`);
+(()=>{
+     console.log(`DB CONNECTED TWO`);   
     }
-)()
+)();
+
+// -------- with an Argument ----------
+((name)=>{
+    console.log(`DB ${name} is CONNECTED`);
+})("Pratik");
