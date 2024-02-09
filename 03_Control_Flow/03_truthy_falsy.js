@@ -31,7 +31,7 @@ let val=5 ?? 40
 val=null ?? 40
 val= undefined ?? 35
 val= 333 ?? null
-
+val= null ?? 39 ?? 400
 console.log(val);
 
 /*---------------------------------------------
