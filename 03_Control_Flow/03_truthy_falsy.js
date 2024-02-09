@@ -24,3 +24,19 @@ if(Object.keys(obj).length===0)
 else
     console.log("Object is not empty");
 
+/* --------------------------------------------
+NULLISH Coalescing Operator (??): Null undefined */
+
+let val=5 ?? 40
+val=null ?? 40
+val= undefined ?? 35
+val= 333 ?? null
+
+console.log(val);
+
+/*---------------------------------------------
+TURNIARY Operator*/
+
+const iceTeaPrice=100;
+iceTeaPrice>=80 ? console.log("Greater than 80"):console.log("less than 80");
+
