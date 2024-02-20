@@ -1,0 +1,66 @@
+html{
+    background-color: #b4b2b2;
+}
+body{
+    background-color: #b4b2b2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: #d4c1c1;
+    text-align: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+nav a{
+    font-size: larger;
+    background-color: rgb(194, 244, 220);
+    display: inline-block;
+    text-decoration: none;
+    border: solid black 2px;
+    padding: 5px;
+    border-radius: 0.3rem;
+    min-width: 9rem;
+    color: #1b1b1b;
+}
+h2{
+    min-height:auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #b4b2b2;
+    border: solid rgb(78, 78, 78) 1px;
+    border-radius: 0.5rem;
+}
+
+#center{
+    background-image: radial-Gradient(rgb(252, 138, 138),rgb(161, 215, 238));
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border: solid rgb(78, 78, 78) 1px;
+
+}
+p,input{
+    font-size: larger;
+    font-weight: 700;
+
+}
+#guess{
+    font-size: xxx-large;
+}
+#guessField{
+    border: solid rgb(135, 127, 127);
+    border-radius: 0.3rem;
+    min-height: 35px;
+    margin-top: 20px;
+    max-width: 225px;
+}
+#sbmt{
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 0.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #4e4e4e;
+    color:white;
+}
