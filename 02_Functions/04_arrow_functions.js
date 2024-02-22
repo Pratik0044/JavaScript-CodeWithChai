@@ -19,7 +19,7 @@ console.log(this)//jab ham node invironment me hote hai to this {} print karta h
 
 // function chai(){
 //     const user="pratik"
-//     console.log(this.user);// THIS kuchh to hai jise kewal object me use kar sakate hai 
+//     console.log(this.user);// (THIS) kuchh to hai jise kewal object me use kar sakate hai 
 // }
 
 // chai()
@@ -45,7 +45,7 @@ console.log(arrowFun(3,5));
 
 // const arrowFun2=(n1,n2)=> n1+n2 
 
-//bina { } bhi arrow function likha jata hai magar esaka matalab hot hai ki value return karana hai
+//bina { } bhi arrow function likha jata hai magar esaka matalab hota hai ki value return karana hai
 
 // console.log(arrowFun2(8,7));
 
