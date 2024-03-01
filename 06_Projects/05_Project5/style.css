@@ -1,0 +1,17 @@
+nav{
+    background-color: #d4c1c1;
+    text-align: center;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+nav a{
+    font-size: larger;
+    background-color: rgb(194, 244, 220);
+    display: inline-block;
+    text-decoration: none;
+    border: solid black 2px;
+    padding: 5px;
+    border-radius: 0.3rem;
+    min-width: 9rem;
+    color: #1b1b1b;
+}

@@ -6,6 +6,23 @@
     <title>Event</title>
 </head>
 <body>
-    
+    <h1>JavaScript</h1>
+    <button id="stop">Stop</button>
 </body>
+<script>
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="This is Js series";
+    }
+
+    const changeMe=setTimeout(changeText,2000) // ye 2 second bad changeText ko call karega
+
+    //-------Agar [setTimeOut] kam nahi karata hi apne time par to use rokane ke liye
+    //[clearTimeout()] ka use karate hai.-------------------------
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPED");
+    })
+</script>
+
 </html>
