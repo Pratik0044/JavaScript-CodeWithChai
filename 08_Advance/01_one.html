@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    const apiUrl='https://api.github.com/users/Pratik0044';
+    xhr.open('GET',apiUrl);
+    xhr.onreadystatechange= function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data=JSON.parse(this.responseText);
+            console.log("follwers is: "+data.followers);
+        }
+    }
+    xhr.send();
+</script>
+</html>
