@@ -24,7 +24,7 @@ new Promise(function(resolve,reject){
     console.log("Async 2 resolve Complete");
 })
 
-//----------------Promise 3--------------------
+//--------------Promise 3------------------------
 
 const promise3= new Promise(function(resolve,reject){
     setTimeout(function(){
@@ -37,7 +37,7 @@ promise3.then(function(data){
     console.log(data);
 })
 
-//----------------Promise 4----------------------
+//--------------Promise 4------------------------
 
 const promise4=new Promise(function(resolve,reject){
     setTimeout(function(){
@@ -56,4 +56,28 @@ promise4.then((user)=>{
     return user.userName;
 }).then(function(data){
     console.log(data);
-}).catch((error)=>{console.log(error);})
+}).catch((error)=>{
+    console.log(error);
+}).finally(()=> console.log("The promise is either resolved or rejected."))
+
+
+//--------------Promise 5------------------------
+
+const promise5= new Promise(function(resolve,reject){
+    setTimeout(() => {
+        let error=true;
+        if(error){
+            reject('Error: JS went wrong')
+        }
+        else{
+            resolve({userName: "Pratik", password: "123456"})
+        }
+    }, 1000);
+})
+
+async function consumePromise5(){
+    const response = await promise5;
+    console.log(response);
+}
+ 
+consumePromise5()
