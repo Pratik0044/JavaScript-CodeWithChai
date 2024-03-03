@@ -70,14 +70,42 @@ const promise5= new Promise(function(resolve,reject){
             reject('Error: JS went wrong')
         }
         else{
-            resolve({userName: "Pratik", password: "123456"})
+            resolve({userName: "js", password: "123456"})
         }
     }, 1000);
 })
 
 async function consumePromise5(){
-    const response = await promise5;
+    try{
+        const response = await promise5;// esame resolve aur reject dono respons esi me aata hai
     console.log(response);
+}   catch(error){
+    console.log(error);
+}
 }
  
-consumePromise5()
+consumePromise5() // Agar response me error aajata hai to catch use karana padata hai
+
+
+// async function getAllUser(){
+//     try{
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data= await response.json();
+//     console.log(data);
+//     }
+//     catch(error){
+//         console.log("E:" ,error); 
+//     }
+// }
+
+// getAllUser();
+
+
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((response)=>{
+    return response.json();
+}).then((data)=>{
+    console.log(data);
+})
+.catch((error)=> console.log(error))
