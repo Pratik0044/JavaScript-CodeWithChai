@@ -87,6 +87,7 @@ async function consumePromise5(){
 consumePromise5() // Agar response me error aajata hai to catch use karana padata hai
 
 
+<<<<<<< HEAD
 async function getAllUser(){
     try{
         const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -99,6 +100,20 @@ async function getAllUser(){
 }
 
 getAllUser();
+=======
+// async function getAllUser(){
+//     try{
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//     const data= await response.json();
+//     console.log(data);
+//     }
+//     catch(error){
+//         console.log("E:" ,error); 
+//     }
+// }
+
+// getAllUser();
+>>>>>>> 358d5d27d7eb3b2f99b21ac86f9ad26ea82e08ac
 
 
 
