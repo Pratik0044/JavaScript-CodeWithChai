@@ -77,7 +77,7 @@ const promise5= new Promise(function(resolve,reject){
 
 async function consumePromise5(){
     try{
-        const response = await promise5;// esame resolve aur reject dono respons esi me aata hai
+        const response = await promise5  ;// esame resolve aur reject dono respons esi me aata hai
     console.log(response);
 }   catch(error){
     console.log(error);
@@ -87,11 +87,10 @@ async function consumePromise5(){
 consumePromise5() // Agar response me error aajata hai to catch use karana padata hai
 
 
-<<<<<<< HEAD
 async function getAllUser(){
     try{
         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-    const data= await response.json();
+    const data= await response.json(); // esko bhi time lgta h 
     console.log(data);
     }
     catch(error){
@@ -100,7 +99,7 @@ async function getAllUser(){
 }
 
 getAllUser();
-=======
+
 // async function getAllUser(){
 //     try{
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -113,8 +112,6 @@ getAllUser();
 // }
 
 // getAllUser();
->>>>>>> 358d5d27d7eb3b2f99b21ac86f9ad26ea82e08ac
-
 
 
 fetch('https://jsonplaceholder.typicode.com/users')
